@@ -1,3 +1,14 @@
+Note: I just forked this to adjust the voltage multiplier factor for my (clone?) tester.
+I have the one from this image:
+
+![rdclone](screenshots/rdclone.jpg)
+
+I had some trouble getting it to work, but I could pair the tester (passcode: 1234) using blueman Bluetooth Manager on Elementary OS Hera (5.1.3). When disconnecting and reconnecting it created a new /dev/rfcommX interface, but the app tried to connect to the one described in \~/.local/share/rd-usb/config.json.
+
+All the kudos go to kollinger (https://github.com/kolinger/rd-usb) and the work of sebastianha (https://github.com/sebastianha/um34c).
+
+==
+
 Web GUI for RuiDeng USB testers (UM34C, UM24C, UM25C, TC66C)
 ==
 
