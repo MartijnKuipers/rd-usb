@@ -52,8 +52,8 @@ class UmInterface(Interface):
         multiplier = 10 if self.higher_resolution else 1
 
         result["timestamp"] = time()
-        result["voltage"] = int("0x" + data[4] + data[5] + data[6] + data[7], 0) / (100 * multiplier)
-        result["current"] = int("0x" + data[8] + data[9] + data[10] + data[11], 0) / (1000 * multiplier)
+        result["voltage"] = int("0x" + data[4] + data[5] + data[6] + data[7], 0) / (10 * multiplier)
+        result["current"] = int("0x" + data[8] + data[9] + data[10] + data[11], 0) / (100 * multiplier)
         result["power"] = int("0x" + data[12] + data[13] + data[14] + data[15] + data[16] +
                               data[17] + data[18] + data[19], 0) / 1000
         result["temperature"] = int("0x" + data[20] + data[21] + data[22] + data[23], 0)
